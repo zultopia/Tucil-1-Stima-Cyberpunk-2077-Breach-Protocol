@@ -1,6 +1,6 @@
 # Tugas Kecil 1 Strategi Algoritma 2023/2024
 <h2 align="center">
-  🩻𖤐⭒๋࣭ ⭑🕸.𖥔 ݁ ˖๋ ࣭ ⭑ Cyberpunk 2077 Breach Protocol in C++ 🩻𖤐⭒๋࣭ ⭑🕸.𖥔 ݁ ˖๋ ࣭ ⭑<br/>
+  🩻𖤐⭒๋࣭ ⭑🕸.𖥔 ݁ ˖๋Cyberpunk 2077 Breach Protocol in C++ 🩻𖤐⭒๋࣭ ⭑🕸.𖥔 ݁ ˖๋<br/>
 </h2>
 <hr>
 
