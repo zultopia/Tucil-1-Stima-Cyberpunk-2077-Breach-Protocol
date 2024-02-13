@@ -134,6 +134,12 @@ def getOptimal(listOfReward, paths):
 def save_solution(sequences, rewards, maximal, outputBuffer, outputposition, execution_time, matrix, filename):
     folderpath = "/Users/azulsuhada/Documents/Semester4/Stima/Tucil-1-Stima/test/output"  
     filepath = os.path.join(folderpath, filename + ".txt")
+    # Mengecek apakah file sudah ada
+    while (os.path.exists(filepath)):
+        print(colored(f"File dengan nama '{filename}.txt' sudah ada. Silakan pilih nama yang lain.", 'red'))
+        filename = input("Masukkan nama file untuk menyimpan solusi: ")
+        folderpath = "/Users/azulsuhada/Documents/Semester4/Stima/Tucil-1-Stima/test/output"  
+        filepath = os.path.join(folderpath, filename + ".txt")
     with open(filepath, "w") as file:
         if (option == 1):
             for row in matrix:
@@ -212,16 +218,16 @@ if __name__ == "__main__":
                 print(colored("\nMaximal Reward:", 'light_red'))
                 print(maximal)
                 inputBuffer = paths[imax]
+                outputBuffer = ""
+                outputposition = position[imax]
                 if maximal == 0 :
                     print(colored("\nTidak ada optimal path yang memenuhi", 'light_red'))
                 else :
-                    outputBuffer = ""
                     print(colored("\nOptimal Path:", 'light_red'))
                     for i in range (0, len(paths[imax]), 2):
                         outputBuffer += inputBuffer[i:i+2] + " "
                     outputBuffer = outputBuffer.rstrip()
                     print(outputBuffer)
-                    outputposition = position[imax]
                     print(colored("\nOptimal Path position:", 'light_red'))
                     for i in range(0, len(position[imax]), 2):
                         print("{}, {}".format(outputposition[i], outputposition[i + 1]))
@@ -229,15 +235,20 @@ if __name__ == "__main__":
                 print(execution_time, "ms")
 
                 # Pilihan apakah ingin menyimpan ke dalam file .txt
-                answer = input("Apakah ingin menyimpan solusi? (y/n): ")
-                if answer.lower() == 'y':
-                    filename = input("Masukkan nama file untuk menyimpan solusi: ")
-                    save_solution(sequences, rewards, maximal, outputBuffer, outputposition, execution_time, matrix, filename)
-                    print("Solusi telah disimpan dalam file", filename + ".txt")
-                elif answer.lower() == 'n':
-                    print("Keluar dari program.")
-                else:
-                    print("Masukan tidak valid. Silakan masukkan 'y' atau 'n'.")
+                validName = False
+                while (validName == False):
+                    answer = input("Apakah ingin menyimpan solusi? (y/n): ")
+                    if answer.lower() == 'y':
+                        validName = True
+                        filename = input("Masukkan nama file untuk menyimpan solusi: ")
+                        save_solution(sequences, rewards, maximal, outputBuffer, outputposition, execution_time, matrix, filename)
+                        print("Solusi telah disimpan dalam file", filename + ".txt\n")
+                    elif answer.lower() == 'n':
+                        validName = True
+                        print("Kembali ke menu utama program.\n")
+                    else:
+                        validName = False
+                        print("Masukan tidak valid. Silakan masukkan 'y' atau 'n'.")
 
         elif option == 2:
             valid = False
@@ -322,15 +333,20 @@ if __name__ == "__main__":
                     print(execution_time, "ms")
 
                     # Pilihan apakah ingin menyimpan ke dalam file .txt
-                    answer = input("Apakah ingin menyimpan solusi? (y/n): ")
-                    if answer.lower() == 'y':
-                        filename = input("Masukkan nama file untuk menyimpan solusi: ")
-                        save_solution(sequences, rewards, maximal, outputBuffer, outputposition, execution_time, matrix, filename)
-                        print("Solusi telah disimpan dalam file", filename + ".txt\n")
-                    elif answer.lower() == 'n':
-                        print("Keluar dari program.")
-                    else:
-                        print("Masukan tidak valid. Silakan masukkan 'y' atau 'n'.")
+                    validName = False
+                    while (validName == False):
+                        answer = input("Apakah ingin menyimpan solusi? (y/n): ")
+                        if answer.lower() == 'y':
+                            validName = True
+                            filename = input("Masukkan nama file untuk menyimpan solusi: ")
+                            save_solution(sequences, rewards, maximal, outputBuffer, outputposition, execution_time, matrix, filename)
+                            print("Solusi telah disimpan dalam file", filename + ".txt\n")
+                        elif answer.lower() == 'n':
+                            validName = True
+                            print("Kembali ke menu utama program.\n")
+                        else:
+                            validName = False
+                            print("Masukan tidak valid. Silakan masukkan 'y' atau 'n'.")
 
         elif option == 3:
             run = False
