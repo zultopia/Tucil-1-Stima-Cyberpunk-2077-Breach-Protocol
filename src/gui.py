@@ -11,7 +11,6 @@ def main_menu():
     main_window.title("Menu Utama")
     main_window.configure(bg='black')
 
-    # Judul besar di bagian tengah atas
     title_label = tk.Label(main_window, text="Minigames Cyberpunk 2077 Breach Protocol", fg="yellow", bg="black",
                            font=("Arial", 20, "bold"))
     title_label.pack(pady=20)
@@ -29,8 +28,7 @@ def main_menu():
                            command=lambda idx=idx: on_option_selected(idx, option))
         button.pack(pady=5)
 
-    # Memuat dan menampilkan gambar pistol
-    pistol_image = Image.open("/Users/azulsuhada/Documents/Semester4/Stima/Tucil-1-Stima/image/i357736.jpeg")
+    pistol_image = Image.open("image/Gui.jpeg")
     pistol_photo = ImageTk.PhotoImage(pistol_image)
     pistol_label = tk.Label(main_window, image=pistol_photo, bg="black")
     pistol_label.image = pistol_photo

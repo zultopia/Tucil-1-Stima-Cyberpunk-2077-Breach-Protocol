@@ -43,15 +43,18 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 <a name="technologies-used"></a>
 
 ## Technologies Used
-- MingGw-W64 version 8.1.0
+- Python: The primary programming language used for this project.
+- Random: Python library used for generating random numbers and choices.
+- Time: Python library used for measuring execution time.
+- OS: Python library used for interacting with the operating system, particularly for file operations.
+- Termcolor: Python library used for colored text output in the terminal.
 
-> Note: The version of the libraries above is the version that we used in this project. You can use the la version of the libraries.
+> Note: The version of the libraries above is the version that we used in this project. You can use the other version of the libraries.
 
 <a name="setup"></a>
 
 ## Setup
-1. Download the MingW-W64 from [here](https://sourceforge.net/projects/mingw-w64/files/).
-2. Install the MingW-W64.
+1. Make sure you have Python installed on your system.
 
 <a name="usage"></a>
 
@@ -70,22 +73,22 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
   <img src="image/MainMenu.png">
   <p>Figure 1. Main Menu</p>
   <nl>
-  <img src="/image/2.png/">
+  <img src="image/InputFile.png">
   <p>Figure 2. Input Interface (via File Input)</p>
   <nl>
-  <img src="/image/3.png/">
+  <img src="image/InputCLI.png">
   <p>Figure 3. Input Interface (via CLI Input)</p>
   <nl>
-  <img src="/image/4.png/">
+  <img src="image/SavingFile.png">
   <p>Figure 4. Saving output file</p>
   <nl>
-  <img src="/image/5.png/">
+  <img src="image/OutputFile.png">
   <p>Figure 5. Output txt file (via File Input)</p>
   <nl>
-  <img src="/image/6.png/">
+  <img src="image/OutputCLI.png">
   <p>Figure 6. Output txt file (via CLI Input)</p>
   <nl>
-  <img src="/image/7.png/">
+  <img src="image/Exit.png">
   <p>Figure 7. Exit </p>
   <nl>
 </p>
@@ -106,14 +109,18 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 │       Tucil1_K2_13522070_MarzuliSuhadaM.pdf
 │
 ├───image
-│       1.png
-│       2.png
-│       3.png
-│       4.png
-│       5.png
+│       Exit.png
+│       Gui.png
+│       InputCLI.png
+│       InputFile.png
+│       MainMenu.png
+│       OutputCLI.png
+│       OutputFile.png
+│       SavingFile.png
 │
 ├───src
 │       main.py
+│       gui.py
 │
 └───
     ├───input
