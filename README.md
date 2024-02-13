@@ -1,6 +1,6 @@
 # Tugas Kecil 1 Strategi Algoritma 2023/2024
 <h2 align="center">
-  🩻𖤐⭒๋࣭ ⭑🕸.𖥔 ݁ ˖๋Cyberpunk 2077 Breach Protocol in C++ 🩻𖤐⭒๋࣭ ⭑🕸.𖥔 ݁ ˖๋<br/>
+  Cyberpunk 2077 Breach Protocol in Python<br/>
 </h2>
 <hr>
 
@@ -59,28 +59,34 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 1. Open the terminal in the project directory.
 2. `cd bin` and then `main.exe` to run the program.
 3. Choose the input format.
-4. If you choose the CLI input format, you can input number_of_unique_tokens, tokens, buffer_size, matrix_size, number_of sequences, and maximum_size_of sequences (not necessarily ordered). If you choose the File input format, you can input the file name (that have been placed in `..//input`). 
+4. If you choose the CLI input format, you can input number_of_unique_tokens, tokens, buffer_size, matrix_size, number_of sequences, and maximum_size_of sequences (not necessarily ordered). If you choose the File input format, you can input the file name (that have been placed in `../Tucil-1-Stima/test/input/{fileName}.txt`). 
 5. The program will output the optimum solutions and the execution time.
-6. If you want to save the output to a txt file, you can choose the `y` option. If you choose this option, you can input the file name (that will be placed in `..//output`).
+6. If you want to save the output to a txt file, you can choose the `y` option. If you choose this option, you can input the file name (that will be placed in `../Tucil-1-Stima/test/output/{fileName}.txt`).
 
 <a name="screenshots"></a>
 
 ## Screenshots
 <p>
-  <img src="/image/1.png/">
+  <img src="image/MainMenu.png">
   <p>Figure 1. Main Menu</p>
   <nl>
   <img src="/image/2.png/">
-  <p>Figure 2. Input File Interface (via File Input)</p>
+  <p>Figure 2. Input Interface (via File Input)</p>
   <nl>
   <img src="/image/3.png/">
-  <p>Figure 3. Solution Output Interface (via CLI Input)</p>
+  <p>Figure 3. Input Interface (via CLI Input)</p>
   <nl>
   <img src="/image/4.png/">
   <p>Figure 4. Saving output file</p>
   <nl>
   <img src="/image/5.png/">
-  <p>Figure 5. Output txt file (via Random Input)</p>
+  <p>Figure 5. Output txt file (via File Input)</p>
+  <nl>
+  <img src="/image/6.png/">
+  <p>Figure 6. Output txt file (via CLI Input)</p>
+  <nl>
+  <img src="/image/7.png/">
+  <p>Figure 7. Exit </p>
   <nl>
 </p>
 
@@ -111,23 +117,17 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 │
 └───
     ├───input
-    │       File1.txt
-    │       File2.txt
-    │       File3.txt
-    │       File4.txt
-    │       File5.txt
+    │       InputTc1.txt
+    │       InputTc2.txt
+    │       InputTc3.txt
     │
     └───output
             OutputCLI1.txt
             OutputCLI2.txt
             OutputCLI3.txt
-            OutputCLI4.txt
-            OutputCLI5.txt
-            OutputFile1.txt
-            OutputFile2.txt
-            OutputFile3.txt
-            OutputFile4.txt
-            OutputFile5.txt
+            OutputTc1.txt
+            OutputTc2.txt
+            OutputTc3.txt
 ```
 
 <a name="project-status">
@@ -141,7 +141,7 @@ Project is: _complete_
 Room for Improvement:
 - Optimalization of the Cyberpunk 2077 Breach Protocol Algorithm code
 - Adding more features
-- Create the better UI for this project
+- Can create the GUI for this project
 
 <a name="acknowledgements">
 
