@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/azulsuhada/Documents/Semester4/Stima/Tucil-1-Stima/src",
+      "program": "/Users/azulsuhada/Documents/Semester4/Stima/Tucil-1-Stima/src/build/Debug/outDebug"
+    }
+  ]
+}

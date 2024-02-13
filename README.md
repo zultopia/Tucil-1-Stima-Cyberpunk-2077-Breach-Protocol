@@ -45,7 +45,7 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 ## Technologies Used
 - MingGw-W64 version 8.1.0
 
-> Note: The version of the libraries above is the version that we used in this project. You can use the latest version of the libraries.
+> Note: The version of the libraries above is the version that we used in this project. You can use the la version of the libraries.
 
 <a name="setup"></a>
 
@@ -59,9 +59,9 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 1. Open the terminal in the project directory.
 2. `cd bin` and then `main.exe` to run the program.
 3. Choose the input format.
-4. If you choose the CLI input format, you can input number_of_unique_tokens, tokens, buffer_size, matrix_size, number_of sequences, and maximum_size_of sequences (not necessarily ordered). If you choose the File input format, you can input the file name (that have been placed in `../test/input`). 
+4. If you choose the CLI input format, you can input number_of_unique_tokens, tokens, buffer_size, matrix_size, number_of sequences, and maximum_size_of sequences (not necessarily ordered). If you choose the File input format, you can input the file name (that have been placed in `..//input`). 
 5. The program will output the optimum solutions and the execution time.
-6. If you want to save the output to a txt file, you can choose the `y` option. If you choose this option, you can input the file name (that will be placed in `../test/output`).
+6. If you want to save the output to a txt file, you can choose the `y` option. If you choose this option, you can input the file name (that will be placed in `..//output`).
 
 <a name="screenshots"></a>
 
@@ -107,27 +107,27 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 │       5.png
 │
 ├───src
-│       main.cpp
+│       main.py
 │
-└───test
+└───
     ├───input
-    │       TestInputFile1.txt
-    │       TestInputFile2.txt
-    │       TestInputFile3.txt
-    │       TestInputFile4.txt
-    │       TestInputFile5.txt
+    │       File1.txt
+    │       File2.txt
+    │       File3.txt
+    │       File4.txt
+    │       File5.txt
     │
     └───output
-            TestOutputCLI1.txt
-            TestOutputCLI2.txt
-            TestOutputCLI3.txt
-            TestOutputCLI4.txt
-            TestOutputCLI5.txt
-            TestOutputFile1.txt
-            TestOutputFile2.txt
-            TestOutputFile3.txt
-            TestOutputFile4.txt
-            TestOutputFile5.txt
+            OutputCLI1.txt
+            OutputCLI2.txt
+            OutputCLI3.txt
+            OutputCLI4.txt
+            OutputCLI5.txt
+            OutputFile1.txt
+            OutputFile2.txt
+            OutputFile3.txt
+            OutputFile4.txt
+            OutputFile5.txt
 ```
 
 <a name="project-status">
