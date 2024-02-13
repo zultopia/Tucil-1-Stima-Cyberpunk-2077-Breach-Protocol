@@ -21,7 +21,7 @@
 <a name="general-information"></a>
 
 ## General Information
-Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk 2077. This minigame is a simulation of hacking a local network from ICE (Intrusion Countermeasures Electronics) in the game Cyberpunk 2077. This project is based on the brute force algorithm and write in C++ (Command Line Interface).
+Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk 2077. This minigame is a simulation of hacking a local network from ICE (Intrusion Countermeasures Electronics) in the game Cyberpunk 2077. This project is based on the brute force algorithm and write in python (Command Line Interface).
 
 <a name="creator-information"></a>
 
@@ -54,7 +54,7 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 <a name="setup"></a>
 
 ## Setup
-1. Make sure you have Python installed on your system.
+1. Make sure you have Python installed on your system. Then for the compilation you can type `python main.py`
 
 <a name="usage"></a>
 
@@ -62,7 +62,7 @@ Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk
 1. Open the terminal in the project directory.
 2. `cd bin` and then `main.exe` to run the program.
 3. Choose the input format.
-4. If you choose the CLI input format, you can input number_of_unique_tokens, tokens, buffer_size, matrix_size, number_of sequences, and maximum_size_of sequences (not necessarily ordered). If you choose the File input format, you can input the file name (that have been placed in `../Tucil-1-Stima/test/input/{fileName}.txt`). 
+4. If you choose the CLI input format, you can input number_of_unique_tokens, tokens, buffer_size, matrix_size, number_of sequences, and maximum_size_of sequences (not necessarily ordered). If you choose the File input format, you can input the file name without `.txt` (that have been placed in `../Tucil-1-Stima/test/input/{fileName}.txt`). 
 5. The program will output the optimum solutions and the execution time.
 6. If you want to save the output to a txt file, you can choose the `y` option. If you choose this option, you can input the file name (that will be placed in `../Tucil-1-Stima/test/output/{fileName}.txt`).
 
